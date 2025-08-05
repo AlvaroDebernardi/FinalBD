@@ -42,6 +42,8 @@
       IDopin CF a Opinion, IDPel CF a Pelicula
     \item Dispone(\underline{Codigo}, \underline{IDprom}) \newline
       Codigo CF a Funcion, IDprom CF a Promocion
+    \item Posee(\underline{NomCine}, \underline{IDprom}) \newline
+      NomCine CF a Cine, IDprom CF a Promocion
     \item PaisProd(\underline{IDPel}, \underline{Pais}) \newline
       IDpel CF a Pelicula
   \end{enumerate}
@@ -94,10 +96,13 @@
           \item NomPers $\rightarrow$ CantDir
       \end{itemize}
       Por lo tanto esta en BCFN.
-    \item 10-13 DPs Son triviales, por lo tanto esta en BCFN.
-    \item PaisProd(\underline{IDPel}, \underline{Pais})
+    \item 10-15 DMVs:
       \begin{itemize}
-          \item IDpel $\twoheadrightarrow$ Pais
+        \item IDpel $\twoheadrightarrow$ NomPers (Actua)
+        \item IDpel $\twoheadrightarrow$ NomPers (Dirige)
+        \item IDpel $\twoheadrightarrow$ IDopin (Opinan)
+        \item Codigo $\twoheadrightarrow$ IDprom (Dispone)
+        \item IDpel $\twoheadrightarrow$ Pais (PaisProd)
       \end{itemize}
       Por lo tanto esta en 4NF.
   \end{itemize}
