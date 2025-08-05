@@ -1,4 +1,3 @@
-
 CREATE DATABASE IF NOT EXISTS proyectoBD;
 use proyectoBD;
 
@@ -199,7 +198,7 @@ INSERT INTO Promocion (IDprom, Descr, Descuento) VALUES
   (1, '2x1 en lunes', 50.00),
   (2, 'Descuento estudiantes', 30.00),
   (3, 'Promo jubilados', 40.00),
-  (4, 'Semana del cine', 20.00),
+  (4, 'Semana del cine', 60.00),
   (5, 'Descuento con Club La Nación', 35.00);
 
 -- Persona
@@ -252,7 +251,8 @@ INSERT INTO Opinan (IDopin, IDpel) VALUES
 INSERT INTO Dispone (Codigo, IDprom) VALUES
   (1, 1),
   (2, 2),
-  (3, 3);
+  (3, 3),
+  (2, 4);
 
 -- Posee
 INSERT INTO Posee (NomCine, IDprom) VALUES
@@ -263,6 +263,9 @@ INSERT INTO Posee (NomCine, IDprom) VALUES
 -- PaisProd
 INSERT INTO PaisProd (IDpel, Pais) VALUES
   (1, 'Argentina'),
+  (1, 'España'),
   (1, 'Uruguay'),
   (2, 'EE.UU.'),
-  (3, 'Corea del Sur');
+  (3, 'Corea del Sur'),
+  (5, 'Japon'),
+  (5, 'España');
