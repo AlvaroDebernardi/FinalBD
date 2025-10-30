@@ -4,9 +4,6 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args) {
 
-        String jdbcURL = "jdbc:mysql://localhost:3306/proyectoBD";
-        String username = "root";
-        String password = "hernan1975";
         
         // intenta establecer la conexión con la base de datos
         try {
